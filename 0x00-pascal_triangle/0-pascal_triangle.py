@@ -1,20 +1,22 @@
 #!/usr/bin/python3
-
+"""A script to determine pascal's triangle for any number"""
 
 def pascal_triangle(n):
-    """lists of ints represented ret"""
-
-    if n <= 0:
-        return []
-
+    """
+    return a list of lists of intergers representing the triangle pascal
+    """
     triangle = []
+
+    # return (triangle if n <= 0)
+    if n <= 0:
+        return triangle
     for i in range(n):
-        row = []
+        temp_list = []
+
         for j in range(i + 1):
             if j == 0 or j == i:
-                row.append(1)
-
+                temp_list.append(1)
             else:
-                row.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
-        triangle.append(row)
+                temp_list.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
+        triangle.append(temp_list)
     return triangle
