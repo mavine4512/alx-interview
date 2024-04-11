@@ -64,7 +64,7 @@ def group_exists(group):
     global solutions
     for stn in solutions:
         i = 0
-       for stn_pos in stn:
+        for stn_pos in stn:
            for grp_pos in group:
                if stn_pos[0] == grp_pos[0] and stn_pos[1] == grp_pos[1]:
                    i += 1
