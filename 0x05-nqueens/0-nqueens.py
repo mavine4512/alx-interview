@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""N queens solution finder module
+"""N queens solution finder module.
 """
 import sys
 
@@ -16,7 +16,7 @@ pos = None
 
 
 def get_input():
-    """Retrieves and validate thi program argument.
+    """Retrieves and validate this program argument.
 
     Returns:
         int: The size of the chassboard.
@@ -107,7 +107,7 @@ def get_solutions():
     build_solution(a, group)
 
 
-    n = get_input()
-    get_solutions()
-    for solution in solutions:
-        print(solution)
+n = get_input()
+get_solutions()
+for solution in solutions:
+    print(solution)
