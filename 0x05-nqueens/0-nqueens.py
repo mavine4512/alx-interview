@@ -5,7 +5,7 @@ import sys
 
 
 solutions = []
-"""The list of posible solutions to the N queens problem.
+"""The list of possible solutions to the N queens problem.
 """
 n = 0
 """The size of chessboard.
