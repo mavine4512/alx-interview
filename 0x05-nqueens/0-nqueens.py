@@ -65,9 +65,9 @@ def group_exists(group):
     for stn in solutions:
         i = 0
         for stn_pos in stn:
-           for grp_pos in group:
-               if stn_pos[0] == grp_pos[0] and stn_pos[1] == grp_pos[1]:
-                   i += 1
+            for grp_pos in group:
+                if stn_pos[0] == grp_pos[0] and stn_pos[1] == grp_pos[1]:
+                    i += 1
         if i == n:
             return True
     return False
