@@ -2,7 +2,6 @@
 """0 Prime Game - Maria and Ben are playing game"""
 
 
-
 def isWinner(x, nums):
     """x - rounds
     nums - numbers list
